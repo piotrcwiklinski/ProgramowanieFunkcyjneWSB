@@ -4,7 +4,7 @@ function MyForEach() {
 
   //pure function
   const testTab=(number)=>{
-    if(number%2==0){
+    if(number%2===0){
       console.log("parzysta")
     }
     else{
@@ -16,11 +16,10 @@ function MyForEach() {
 
   myTab.forEach((x)=> {console.log(x+5)})
 
+  myTab.forEach(testTab);
+
   return (
     <div>
-
-
-      
     </div>
   );
 }
